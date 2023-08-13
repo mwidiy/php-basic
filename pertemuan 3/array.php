@@ -6,7 +6,7 @@
     $days = array("senin","selasa","rabu","kamis","jumat","sabtu","ahad");
     // print_r($days);
     // array baru
-    $items = ["buku","pensil","penghapus",];
+    $items = ["buku","pensil","penghapus","meja"];
     // echo $items[1];
 
     // cara menambahkan nilai array
@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>array</title>
     <style>
-        div {
+        .kotak {
             width: 50px;
             height: 50px;
             background-color: red;
@@ -34,12 +34,21 @@
             margin: 3px;
             float: left;
         }
+
+        .clear {clear: both;}
     </style>
 </head>
 <body>
     <!-- count = fungsi untuk menampilkan banyaknya nilai array -->
 <?php for($i = 0; $i < count($days); $i++) {?>
-    <div><?= $days[$i];?></div>
+    <div class="kotak"><?= $days[$i];?></div>
 <?php } ?>
+
+<div class="clear"></div>
+
+<!-- foreach = pengulangan yang khusus untuk array -->
+<?php foreach($items as $barang) {?>
+    <div class="kotak"><?= $barang ?></div>
+<?php }?>
 </body>
 </html>
