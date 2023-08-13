@@ -1,5 +1,6 @@
 <?php
-    $datas = ["widi","09090909","widi@gmail.com","ds.kendalrejo"];
+    $datas = [["widi","09090909","widi@gmail.com","ds.kendalrejo"],
+    ["muscovy alex","080808","alexander-mucovy@gmail.com","ds.kendalrejo"]];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +11,13 @@
 </head>
 <body>
     <h1>Daftar data orang penting</h1>
+    <?php foreach ($datas as $data) : ?>
     <ul>
-        <?php foreach ($datas as $data) : ?>
-        <li><?= $data ?></li>
-        <?php endforeach?>
+        <li><?= $data[0] ?></li>
+        <li><?= $data[1] ?></li>
+        <li><?= $data[2] ?></li>
+        <li><?= $data[3] ?></li>
     </ul>
+    <?php endforeach?>
 </body>
 </html>
