@@ -13,10 +13,10 @@
     <h1>Daftar data orang penting</h1>
     <?php foreach ($datas as $data) : ?>
     <ul>
-        <li><?= $data[0] ?></li>
-        <li><?= $data[1] ?></li>
-        <li><?= $data[2] ?></li>
-        <li><?= $data[3] ?></li>
+        <li>nama :<?= $data[0] ?></li>
+        <li>id :<?= $data[1] ?></li>
+        <li>email :<?= $data[2] ?></li>
+        <li>alamat :<?= $data[3] ?></li>
     </ul>
     <?php endforeach?>
 </body>
