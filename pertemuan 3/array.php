@@ -40,15 +40,16 @@
 </head>
 <body>
     <!-- count = fungsi untuk menampilkan banyaknya nilai array -->
-<?php for($i = 0; $i < count($days); $i++) {?>
-    <div class="kotak"><?= $days[$i];?></div>
-<?php } ?>
+    <!-- gaya penulisan templating = { diganti : dan } diganti end -->
+<?php for($i = 0; $i < count($days); $i++) :?>
+    <div class="kotak"><?= $days[$i]; ?></div>
+<?php endfor ?>
 
 <div class="clear"></div>
 
 <!-- foreach = pengulangan yang khusus untuk array -->
-<?php foreach($items as $barang) {?>
+<?php foreach($items as $barang) :?>
     <div class="kotak"><?= $barang ?></div>
-<?php }?>
+<?php endforeach?>
 </body>
 </html>
