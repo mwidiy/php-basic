@@ -1,6 +1,22 @@
 <?php 
     // array associative = array dengan ke string yang di buat sendiri
-    $datas = [["nama"=>"widi","id"=>"09090909","email"=>"widi@gmail.com","alamat"=>"ds.kendalrejo"],["nama"=>"entok","id"=>"08080808","email"=>"entok@gamail.com","alamat"=>"ds.kendalrejo"]];
+    $datas = [
+        "data1"=>[
+            "nama"=>"widi",
+            "id"=>"09090909",
+            "email"=>"widi@gmail.com",
+            "alamat"=>"ds.kendalrejo",
+            "poin"=>[100,100,100]
+        ]
+        ,"data2"=>[
+            "nama"=>"entok",
+            "id"=>"08080808",
+            "email"=>"entok@gamail.com",
+            "alamat"=>"ds.kendalrejo",
+            "poin"=>[90,80,40]
+        ]
+    ];
+  
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +34,9 @@
             <li><?= $data["id"]?></li>
             <li><?= $data["email"]?></li>
             <li><?= $data["alamat"]?></li>
+            <?php foreach($data["poin"] as $nilai) :?>
+                <li><?= $nilai?></li>
+            <?php endforeach ?>
         </ul>
     <?php endforeach ?>
 </body>
