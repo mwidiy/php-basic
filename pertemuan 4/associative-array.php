@@ -1,21 +1,40 @@
 <?php 
     // array associative = array dengan ke string yang di buat sendiri
-    $datas = [
+    $markets = [
         "data1"=>[
-            "foto"=>"img/hutao.png",
-            "nama"=>"widi",
-            "id"=>"09090909",
-            "email"=>"widi@gmail.com",
-            "alamat"=>"ds.kendalrejo",
-            "poin"=>[100,100,100]
-        ]
-        ,"data2"=>[
-            "foto"=>"img/entok.png",
-            "nama"=>"entok",
-            "id"=>"08080808",
-            "email"=>"entok@gamail.com",
-            "alamat"=>"ds.kendalrejo",
-            "poin"=>[90,80,40]
+            "foto"=>"img/akungenshin1.jpg",
+            "jenis"=>"genshin impack",
+            "harga"=>"1000000",
+            "toko"=>"chandra store",
+            "deskripsi"=>"jual akun genshin b5 lengkap sisanya lihat foto",
+        ],
+        "data2"=>[
+            "foto"=>"img/akungenshin2.jpg",
+            "jenis"=>"genshin impack",
+            "harga"=>"200000",
+            "toko"=>"amelia store",
+            "deskripsi"=>"jual akun genshin xiao c6 minus infoker",
+        ],
+        "data3"=>[
+            "foto"=>"img/akunmlbb.jpg",
+            "jenis"=>"mobile legend",
+            "harga"=>"500000",
+            "toko"=>"amelia store",
+            "deskripsi"=>"jual akun mlbb skin legend gs epik limit banyak",
+        ],
+        "data4"=>[
+            "foto"=>"img/akunpubg.jpg",
+            "jenis"=>"pubg mobile",
+            "harga"=>"1500000",
+            "toko"=>"ferdy sambo",
+            "deskripsi"=>"akun pubg full skin no minus siap reff",
+        ],
+        "data5"=>[
+            "foto"=>"img/akunff.jpg",
+            "jenis"=>"free fire",
+            "harga"=>"100000",
+            "toko"=>"danang tpg",
+            "deskripsi"=>"jual akun ff full pet dan inventori rank gm",
         ]
     ];
   
@@ -29,17 +48,14 @@
     <title>array associative</title>
 </head>
 <body>
-    <h1>data orang penting</h1>
-    <?php foreach($datas as $data) :?>
+    <h1>data toko online</h1>
+    <?php foreach($markets as $market) :?>
         <ul>
-            <li><img src="<?= $data["foto"]?>"></li>
-            <li><?= $data["nama"]?></li>
-            <li><?= $data["id"]?></li>
-            <li><?= $data["email"]?></li>
-            <li><?= $data["alamat"]?></li>
-            <?php foreach($data["poin"] as $nilai) :?>
-                <li><?= $nilai?></li>
-            <?php endforeach ?>
+            <li><img src="<?= $market["foto"]?>"></li>
+            <li><?= $market["jenis"]?></li>
+            <li><?= $market["harga"]?></li>
+            <li><?= $market["toko"]?></li>
+            <li><?= $market["deskripsi"]?></li>
         </ul>
     <?php endforeach ?>
 </body>
