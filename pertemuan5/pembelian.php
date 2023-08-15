@@ -1,4 +1,11 @@
-<?php 
+<?php
+    // pengecekan untuk variable $_get ada datanya
+    // isset = mengecek variable udah pernah di buat belum
+    // header berfungsi untuk memindahkan user
+    if (!isset($_GET["jenis"])){
+        header("location: get.php");
+        exit;
+    }
     $_GET;
 ?>
 
