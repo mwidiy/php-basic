@@ -34,6 +34,7 @@
             "harga"=>"1000000",
             "toko"=>"chandra store",
             "deskripsi"=>"jual akun genshin b5 lengkap sisanya lihat foto",
+            "buy"=>"beli"
         ],
         "data2"=>[
             "foto"=>"img/akungenshin2.jpg",
@@ -41,6 +42,7 @@
             "harga"=>"200000",
             "toko"=>"amelia store",
             "deskripsi"=>"jual akun genshin xiao c6 minus infoker",
+            "buy"=>"beli"
         ],
         "data3"=>[
             "foto"=>"img/akunmlbb.jpg",
@@ -48,6 +50,7 @@
             "harga"=>"500000",
             "toko"=>"amelia store",
             "deskripsi"=>"jual akun mlbb skin legend gs epik limit banyak",
+            "buy"=>"beli"
         ],
         "data4"=>[
             "foto"=>"img/akunpubg.jpg",
@@ -55,6 +58,7 @@
             "harga"=>"1500000",
             "toko"=>"ferdy sambo",
             "deskripsi"=>"akun pubg full skin no minus siap reff",
+            "buy"=>"beli"
         ],
         "data5"=>[
             "foto"=>"img/akunff.jpg",
@@ -62,6 +66,7 @@
             "harga"=>"100000",
             "toko"=>"danang tpg",
             "deskripsi"=>"jual akun ff full pet dan inventori rank gm",
+            "buy"=>"beli"
         ]
     ];
 ?>
@@ -82,6 +87,9 @@
             <li><?= $market["harga"]?></li>
             <li><?= $market["toko"]?></li>
             <li><?= $market["deskripsi"]?></li>
+            <li>
+                <a href="pembelian.php?foto=<?= $market["foto"]?>&jenis=<?= $market["jenis"]?>&harga=<?= $market["harga"]?>&toko=<?= $market["toko"]?>&deskripsi=<?= $market["deskripsi"]?>"><?= $market["buy"]?></a>
+            </li>
         </ul>
     <?php endforeach ?>
 </body>
