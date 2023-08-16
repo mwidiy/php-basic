@@ -2,7 +2,7 @@
     // pengecekan untuk variable $_get ada datanya
     // isset = mengecek variable udah pernah di buat belum
     // header berfungsi untuk memindahkan user
-    if (!isset($_GET["jenis"])){
+    if (!isset($_GET["jenis"]) || !isset($_GET["foto"]) || !isset($_GET["harga"]) || !isset($_GET["toko"]) || !isset($_GET["deskripsi"])){
         header("location: get.php");
         exit;
     }
@@ -34,6 +34,6 @@
         <li><?= $_GET["deskripsi"]?></li>
     </ul>
     <p><a href="#">lanjut beli</a></p>
-    <p><a href="get.php">batalkan</a></p>
+    <p><a href="menu.php">batalkan</a></p>
 </body>
 </html>
